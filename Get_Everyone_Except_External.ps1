@@ -6,6 +6,7 @@ $groupId = "spo-grid-all-users/eed97d6b-5444-44cd-9eae-85380aa53722"
 $outputFilePath = "C:\temp\output.csv"
 $sites= import-csv -literalpath c:\temp\groupconnectedsites.csv
 $collection=@()
+
 Foreach ($site in $sites ){
 # Set Admin as Sitecollection Admin
 #Set-SPOUser -Site $site.Url -LoginName <adminuser> -IsSiteCollectionAdmin $true | Out-Null
