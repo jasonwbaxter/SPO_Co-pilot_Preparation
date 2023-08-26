@@ -1,6 +1,9 @@
 # Connect to SharePoint Online
 Connect-SPOService -Url https://<tenant>-admin.sharepoint.com
 
+#you will need to update the Groupid ,<tenant> , path of the CSV of the sites and $site.url to match the column of your csv which i think is $site.siteurl
+#You can get the group id by opening the everyone except external user on the permissions page.
+
 # Specify the group's ID
 $groupId = "spo-grid-all-users/eed97d6b-5444-44cd-9eae-85380aa53722"
 $outputFilePath = "C:\temp\output.csv"
