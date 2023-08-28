@@ -16,12 +16,12 @@ Foreach ($site in $sites ){
 
 # Get information about the group 
 $group = Get-SPOSiteGroup $site.url 
-
+$content = "GroupName" +","+"Url"+","+"`n"
 foreach($g in $group){
     
     if ($g.Users -contains $groupId) { 
         Write-Host "found everyone except external" + $_($g.Title) + $site.Url
-        $content =  $($g.Title) +","+ $site.Url
+        $content +=  $($g.Title) +","+ $site.Url
         $content| Out-File -Append -FilePath $outputFilePath -Encoding utf8
 
              }
