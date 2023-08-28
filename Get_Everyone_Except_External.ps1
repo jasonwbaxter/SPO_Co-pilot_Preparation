@@ -25,6 +25,7 @@ foreach($g in $group){
         $content| Out-File -Append -FilePath $outputFilePath -Encoding utf8
 
              }
+             $g=""
     
 }
 #Remove admin as sitecollection admin.
