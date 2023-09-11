@@ -8,6 +8,6 @@ $sites= import-csv -literalpath $InputFilePath
 
 Foreach ($site in $sites ){
 
-    Remove-SPOUser -Site $site.Url -LoginName $groupId -Group $site.GroupName
+    Remove-SPOUser -Site $site.Url -LoginName $groupId 
 
 }
