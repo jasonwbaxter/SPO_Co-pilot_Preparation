@@ -6,3 +6,14 @@ Set-SPOTenant  -ShowAllUsersClaim $false
 #Hide Everyone & Everyone Except External from people picker for SPO
 Set-SPOTenant  -ShowEveryoneExceptExternalUsersClaim $false
 Set-SPOTenant  -ShowEveryoneClaim $false
+Set-SPOTenant -AllowEveryoneExceptExternalUsersClaimInPrivateSite $false
+
+
+
+
+
+#Ignore - Just Brain storming.
+#DisallowInfectedFileDownload
+#EnableSensitivityLabelforPDF
+#IsWBFluidEnabled
+#LegacyAuthProtocolsEnabled :$false
