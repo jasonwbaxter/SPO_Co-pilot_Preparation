@@ -23,9 +23,9 @@ foreach($g in $group){
         Write-Host "found everyone except external" + $_($g.Title) + $site.Url
         $content +=  $($g.Title) +","+ $site.Url
         $content| Out-File -Append -FilePath $outputFilePath -Encoding utf8
-
+        $g=""
              }
-             $g=""
+             
     
 }
 #Remove admin as sitecollection admin.
